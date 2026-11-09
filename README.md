@@ -47,7 +47,6 @@ Sou desenvolvedora backend na **Solinftec**, onde trabalho com **Java, Spring Bo
 
 | Projeto | Sobre | Stack |
 |---|---|---|
-| [**Feedback Serverless**](https://github.com/JavaPosTech/Feedback-Serverless) | Plataforma de feedback 100% serverless: Azure Functions (HTTP, fila e timer), alertas por e-mail e relatório semanal, IaC em Bicep | Java 21 · Quarkus · Azure Functions · Bicep |
 | [**AgendamentoAPI**](https://github.com/JavaPosTech/AgendamentoAPI) | Microsserviço de agendamento hospitalar com autenticação JWT e comunicação assíncrona | Java 21 · Spring Security · PostgreSQL |
 | [**NotificacaoAPI**](https://github.com/JavaPosTech/NotificacaoAPI) | Consome eventos do RabbitMQ e notifica pacientes por e-mail, com retentativa automática | Spring Boot · RabbitMQ · Spring Retry |
 | [**HistoricoAPI**](https://github.com/JavaPosTech/HistoricoAPI) | Histórico de consultas via GraphQL com 100% de cobertura de testes | Spring for GraphQL · JUnit 5 · JaCoCo |
