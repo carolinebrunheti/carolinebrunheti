@@ -4,7 +4,7 @@
 
 <p align="center">
   <!-- Troque o link abaixo pelo endereço do seu portfólio quando ele estiver publicado -->
-  <a href="https://SEU-PORTFOLIO.vercel.app"><img src="https://img.shields.io/badge/Portfólio-8b5cf6?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfólio" /></a>
+  <a href="https://carolinebrunheti.netlify.app/"><img src="https://img.shields.io/badge/Portfólio-8b5cf6?style=for-the-badge&logo=netlify&logoColor=white" alt="Portfólio" /></a>
   <a href="https://www.linkedin.com/in/carolinebrunheti/"><img src="https://img.shields.io/badge/LinkedIn-6366f1?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:caroline.brunheti@outlook.com"><img src="https://img.shields.io/badge/E--mail-06b6d4?style=for-the-badge&logo=microsoftoutlook&logoColor=white" alt="E-mail" /></a>
 </p>
