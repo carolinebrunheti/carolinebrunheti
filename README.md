@@ -13,7 +13,7 @@
 
 ### 👩‍💻 Sobre mim
 
-Sou desenvolvedora backend na **Solinftec**, onde trabalho com **Java, Spring Boot e Kafka**, persistência em **Oracle** e **PostgreSQL/PostGIS** e aplicações rodando em **Kubernetes** com observabilidade na **AWS**. Estou me aprofundando em arquitetura de sistemas distribuídos — não só em como construir aplicações, mas em como projetá-las para escalar, evoluir e se manter confiáveis.
+Sou desenvolvedora backend na **Solinftec**, onde trabalho com **Java, Spring Boot e Kafka**, persistência em **Oracle** e **PostgreSQL/PostGIS** e aplicações rodando em **Kubernetes** com observabilidade na **AWS**. Estou me aprofundando em arquitetura de sistemas distribuídos, não só em como construir aplicações mas em como projetá-las para escalar, evoluir e se manter confiáveis.
 
 <p align="center">
   <img src="./assets/terminal.svg" alt="Terminal: whoami, stack e o que estou estudando" width="760" />
