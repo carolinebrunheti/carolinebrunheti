@@ -11,7 +11,7 @@
 
 ---
 
-### 👩‍💻 Sobre mim
+### Sobre mim
 
 Sou desenvolvedora backend na **Solinftec**, onde trabalho com **Java, Spring Boot e Kafka**, persistência em **Oracle** e **PostgreSQL/PostGIS** e aplicações rodando em **Kubernetes** com observabilidade na **AWS**. Estou me aprofundando em arquitetura de sistemas distribuídos, não só em como construir aplicações mas em como projetá-las para escalar, evoluir e se manter confiáveis.
 
@@ -43,21 +43,23 @@ Sou desenvolvedora backend na **Solinftec**, onde trabalho com **Java, Spring Bo
   <img src="https://img.shields.io/badge/GitHub%20Actions-06b6d4?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
 </p>
 
+### Projeto principal: PetServices
 
-▎  Projeto principal: PetServices
-▎
-▎ Sistema de clínica veterinária com 3 microsserviços que conversam por eventos no Kafka, rodando em Kubernetes (AKS) com deploy automático e rollback no GitHub Actions. Passou por testes de caos (Kafka, Postgres e pods derrubados) e de carga com k6, que levaram a Outbox, Dead Letter Topic, idempotência e falha rápida com 503.
-▎
-▎ (diagrama: Cadastros + login JWT → Kafka → Agendamento → Kafka → Histórico)
-▎
-▎ | Repositório       | Papel                                            | Stack                                             |
-▎ |-------------------|--------------------------------------------------|---------------------------------------------------|
-▎ | PetServices       | Cadastros, login JWT e eventos via Outbox        | Java 17 · Spring Boot 4 · Spring Security · Kafka |
-▎ | PetAgendamentoApi | Agendamento de consultas, com DLT e idempotência | Java 17 · Spring Boot 4 · Kafka · PostgreSQL      |
-▎ | HistoricoPetApi1  | Histórico de consultas, alimentado por eventos   | Java 17 · Spring Boot 4 · Kafka · PostgreSQL      |
-▎ | PetServicesK8s    | Kubernetes, CI/CD e testes de carga              | AKS · GitHub Actions · k6                         |
-▎
-▎ 0 falhas com 150 usuários simultâneos · 0 dados perdidos com o Kafka fora do ar · 239 testes automatizados com Testcontainers
+Sistema de clínica veterinária com **3 microsserviços** que conversam por eventos no **Kafka**, rodando em **Kubernetes (AKS)** com deploy automático e rollback no GitHub Actions. Passou por testes de caos (Kafka, Postgres e pods derrubados) e de carga com k6, que levaram a **Outbox, Dead Letter Topic, idempotência e falha rápida com 503**.
+
+```mermaid
+flowchart LR
+    C["Cadastros + login JWT"] -- Kafka --> A["Agendamento"] -- Kafka --> H["Histórico"]
+```
+
+| Repositório | Papel | Stack |
+|---|---|---|
+| [**PetServices**](https://github.com/carolinebrunheti/PetServices) | Cadastros, login JWT e eventos via Outbox | Java 17 · Spring Boot 4 · Spring Security · Kafka |
+| [**PetAgendamentoApi**](https://github.com/carolinebrunheti/PetAgendamentoApi) | Agendamento de consultas, com DLT e idempotência | Java 17 · Spring Boot 4 · Kafka · PostgreSQL |
+| [**HistoricoPetApi1**](https://github.com/carolinebrunheti/HistoricoPetApi1) | Histórico de consultas, alimentado por eventos | Java 17 · Spring Boot 4 · Kafka · PostgreSQL |
+| [**PetServicesK8s**](https://github.com/carolinebrunheti/PetServicesK8s) | Kubernetes, CI/CD e testes de carga | AKS · GitHub Actions · k6 |
+
+**0** falhas com 150 usuários simultâneos · **0** dados perdidos com o Kafka fora do ar · **239** testes automatizados com Testcontainers
 
 ### Outros projetos
 
