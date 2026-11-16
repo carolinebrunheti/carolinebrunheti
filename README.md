@@ -19,7 +19,7 @@ Sou desenvolvedora backend na **Solinftec**, onde trabalho com **Java, Spring Bo
   <img src="./assets/terminal.svg" alt="Terminal: whoami, stack e o que estou estudando" width="760" />
 </p>
 
-### 🧰 Stack
+### Stack
 
 <p>
   <img src="https://img.shields.io/badge/Java-8b5cf6?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
@@ -43,7 +43,23 @@ Sou desenvolvedora backend na **Solinftec**, onde trabalho com **Java, Spring Bo
   <img src="https://img.shields.io/badge/GitHub%20Actions-06b6d4?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
 </p>
 
-### 🚀 Projetos em destaque
+
+▎  Projeto principal: PetServices
+▎
+▎ Sistema de clínica veterinária com 3 microsserviços que conversam por eventos no Kafka, rodando em Kubernetes (AKS) com deploy automático e rollback no GitHub Actions. Passou por testes de caos (Kafka, Postgres e pods derrubados) e de carga com k6, que levaram a Outbox, Dead Letter Topic, idempotência e falha rápida com 503.
+▎
+▎ (diagrama: Cadastros + login JWT → Kafka → Agendamento → Kafka → Histórico)
+▎
+▎ | Repositório       | Papel                                            | Stack                                             |
+▎ |-------------------|--------------------------------------------------|---------------------------------------------------|
+▎ | PetServices       | Cadastros, login JWT e eventos via Outbox        | Java 17 · Spring Boot 4 · Spring Security · Kafka |
+▎ | PetAgendamentoApi | Agendamento de consultas, com DLT e idempotência | Java 17 · Spring Boot 4 · Kafka · PostgreSQL      |
+▎ | HistoricoPetApi1  | Histórico de consultas, alimentado por eventos   | Java 17 · Spring Boot 4 · Kafka · PostgreSQL      |
+▎ | PetServicesK8s    | Kubernetes, CI/CD e testes de carga              | AKS · GitHub Actions · k6                         |
+▎
+▎ 0 falhas com 150 usuários simultâneos · 0 dados perdidos com o Kafka fora do ar · 239 testes automatizados com Testcontainers
+
+### Outros projetos
 
 | Projeto | Sobre | Stack |
 |---|---|---|
@@ -55,7 +71,7 @@ Sou desenvolvedora backend na **Solinftec**, onde trabalho com **Java, Spring Bo
 
 <sub>Os projetos da FIAP foram desenvolvidos em grupo na pós-graduação.</sub>
 
-### 🐍 Contribuições
+### Contribuições
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/carolinebrunheti/carolinebrunheti/output/github-snake-dark.svg" />
@@ -66,5 +82,5 @@ Sou desenvolvedora backend na **Solinftec**, onde trabalho com **Java, Spring Bo
 ---
 
 <p align="center">
-  <sub>💜 Sempre aberta a trocar ideias sobre backend, arquitetura e sistemas distribuídos</sub>
+  <sub> Sempre aberta a trocar ideias sobre backend, arquitetura e sistemas distribuídos</sub>
 </p>
